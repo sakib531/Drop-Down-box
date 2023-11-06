@@ -7,7 +7,7 @@
     list-style: none;
 }
 
-.main-menu ul li {
+.main-menu > ul > li {
     float: left;
 }
 
@@ -29,4 +29,18 @@
 
 .main-menu ul li a:hover {
     background: green;
+}
+
+.ul.sub-menu {
+    /* background: green; */
+    height: 23px;
+}
+
+.sub-menu {
+    background: red;
+    display: none;
+}
+
+.main-menu ul li:hover .sub-menu {
+    display: block;
 }
